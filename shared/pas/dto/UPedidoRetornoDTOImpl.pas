@@ -36,10 +36,10 @@ constructor TPedidoRetornoDTO.Create(const APizzaTamanho: TPizzaTamanhoEnum;
   const APizzaSabor: TPizzaSaborEnum; const AValorTotalPedido: Currency;
   const ATempoPreparo: Integer);
 begin
-  FPizzaTamanho := APizzaTamanho;
-  FPizzaSabor := APizzaSabor;
+  FPizzaTamanho     := APizzaTamanho;
+  FPizzaSabor       := APizzaSabor;
   FValorTotalPedido := AValorTotalPedido;
-  FTempoPreparo := ATempoPreparo;
+  FTempoPreparo     := ATempoPreparo;
 end;
 
 end.

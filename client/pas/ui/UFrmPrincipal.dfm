@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Client'
-  ClientHeight = 256
-  ClientWidth = 597
+  ClientHeight = 277
+  ClientWidth = 556
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -28,7 +28,7 @@ object Form1: TForm1
     Caption = 'Sabor da Pizza:'
   end
   object Label3: TLabel
-    Left = 312
+    Left = 264
     Top = 8
     Width = 118
     Height = 13
@@ -37,7 +37,7 @@ object Form1: TForm1
   object edtDocumentoCliente: TLabeledEdit
     Left = 16
     Top = 64
-    Width = 193
+    Width = 218
     Height = 21
     EditLabel.Width = 98
     EditLabel.Height = 13
@@ -47,18 +47,18 @@ object Form1: TForm1
   object cmbTamanhoPizza: TComboBox
     Left = 16
     Top = 109
-    Width = 193
+    Width = 218
     Height = 21
     TabOrder = 1
     Items.Strings = (
       'enPequena'
       'enMedia'
-      'enGrange')
+      'enGrande')
   end
   object cmbSaborPizza: TComboBox
     Left = 16
     Top = 152
-    Width = 193
+    Width = 218
     Height = 21
     TabOrder = 2
     Items.Strings = (
@@ -66,20 +66,20 @@ object Form1: TForm1
       'enMarguerita'
       'enPortuguesa')
   end
-  object Button1: TButton
-    Left = 104
-    Top = 217
+  object BTFazerPedido: TButton
+    Left = 16
+    Top = 233
     Width = 105
     Height = 25
     Caption = '&1 - Fazer Pedido'
     TabOrder = 3
-    OnClick = Button1Click
+    OnClick = BTFazerPedidoClick
   end
   object mmRetornoWebService: TMemo
-    Left = 312
-    Top = 25
+    Left = 264
+    Top = 24
     Width = 265
-    Height = 217
+    Height = 234
     Lines.Strings = (
       'mmRetornoWebService')
     TabOrder = 4
@@ -87,7 +87,7 @@ object Form1: TForm1
   object edtEnderecoBackend: TLabeledEdit
     Left = 16
     Top = 24
-    Width = 161
+    Width = 218
     Height = 21
     EditLabel.Width = 131
     EditLabel.Height = 13
@@ -96,14 +96,23 @@ object Form1: TForm1
     Text = 'http://localhost'
   end
   object edtPortaBackend: TLabeledEdit
-    Left = 183
-    Top = 24
-    Width = 114
+    Left = 16
+    Top = 190
+    Width = 218
     Height = 21
     EditLabel.Width = 112
     EditLabel.Height = 13
     EditLabel.Caption = 'Porta Pizzaria Backend:'
     TabOrder = 6
     Text = '8080'
+  end
+  object BTConsultarPedido: TButton
+    Left = 127
+    Top = 233
+    Width = 107
+    Height = 25
+    Caption = '&2 - Consultar pedido'
+    TabOrder = 7
+    OnClick = BTConsultarPedidoClick
   end
 end
